@@ -15,34 +15,56 @@ Steps:
 1. Create a Private S3 Bucket and keep this checked "Block all public access" (i.e., bucket remains private) and Upload the website files (e.g., index.html, style.css)
 
 2. Request SSL Certificate with ACM
+   
 Go to ACM (Certificate Manager)
+
 Request a public certificate
+
 Add domain name: manikandanr.info
+
 Choose DNS validation
+
 Copy DNS validation CNAME and add it in Route 53
+
 Wait until status becomes Issued.
 
-3. Create CloudFront Distribution
+4. Create CloudFront Distribution
+   
 Origin domain: my S3 bucket name (selected from dropdown)
+
 Origin access: Created OAC (Origin Access Control)
+
 Viewer protocol policy: Redirect HTTP to HTTPS
+
 Alternate domain name (CNAME): manikandar.info
+
 Custom SSL certificate: Selected the ACM cert
+
 Default root object: index.html
+
 Click Create distribution
 
-4. Attached OAC Permissions to Bucket
+5. Attached OAC Permissions to Bucket
+   
 After distribution is created, got the OAC settings
+
 Go to your S3 bucket > Permissions > Bucket Policy
+
 Past the policy.
 
-5. Set Up Route 53
+6. Set Up Route 53
+   
 Go to Route 53 > Hosted zones > my domain
+
 Creat a new A Record:
+
 Type: A
+
 Alias: Yes
+
 Alias target: Selected my CloudFront distribution
 
-6. Test my Website
+7. Test my Website
+   
 Visit https://www.manikandanr.info — the site should loads securely over HTTPS using CloudFront.
 
