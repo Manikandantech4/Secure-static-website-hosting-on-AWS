@@ -50,7 +50,7 @@ After distribution is created, got the OAC settings
 
 Go to your S3 bucket > Permissions > Bucket Policy
 
-Past the policy.
+Paste the policy.
 
 6. Set Up Route 53
    
@@ -63,6 +63,8 @@ Type: A
 Alias: Yes
 
 Alias target: Selected my CloudFront distribution
+
+Wait for the cloudfront distribution to engage.
 
 7. Test my Website
    
