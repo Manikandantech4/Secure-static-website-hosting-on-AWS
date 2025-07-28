@@ -8,6 +8,9 @@ Key Highlights:
 3. Configured Amazon Route 53 for custom domain routing and DNS management.
 4. Enabled HTTPS and SSL certificate via AWS Certificate Manager for secure website access.
 
+   <img width="692" height="117" alt="Screenshot 2025-07-28 at 10 41 25 AM" src="https://github.com/user-attachments/assets/ba0c0520-adc3-4d5f-9635-3f26fe3ec89d" />
+
+
 ✅ Step-by-Step Deployment
 
 1. Created a Private S3 Bucket
