@@ -28,7 +28,7 @@ Copy DNS validation CNAME and add it in Route 53
 
 Wait until status becomes Issued.
 
-4. Create CloudFront Distribution
+3. Create CloudFront Distribution
    
 Origin domain: my S3 bucket name (selected from dropdown)
 
@@ -44,7 +44,7 @@ Default root object: index.html
 
 Click Create distribution
 
-5. Attached OAC Permissions to Bucket
+4. Attached OAC Permissions to Bucket
    
 After distribution is created, got the OAC settings
 
@@ -52,7 +52,7 @@ Go to your S3 bucket > Permissions > Bucket Policy
 
 Paste the policy.
 
-6. Set Up Route 53
+5. Set Up Route 53
    
 Go to Route 53 > Hosted zones > my domain
 
