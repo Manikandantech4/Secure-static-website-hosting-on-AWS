@@ -5,7 +5,7 @@ Goals:
 
 1. Create a responsive static website using HTML, CSS, and JavaScript.
 2. Host static content on a private S3 bucket, with CloudFront as a secure content delivery layer using Origin Access Control (OAC).
-3. Configur Amazon Route 53 for custom domain routing and DNS management.
+3. Configure Amazon Route 53 for custom domain routing and DNS management.
 4. Enable HTTPS and SSL certificate via AWS Certificate Manager for secure website access.
 
  <img width="692" height="117" alt="Screenshot 2025-07-28 at 10 49 12 AM" src="https://github.com/user-attachments/assets/f800a186-6039-4e12-9bc6-971d873851a9" />
